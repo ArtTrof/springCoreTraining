@@ -1,0 +1,416 @@
+Index: Lesson6(HomeWork)/src/main/java/org/example/PopMusic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/java/org/example/PopMusic.java b/Lesson6(HomeWork)/src/main/java/org/example/PopMusic.java
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/java/org/example/PopMusic.java	
+@@ -0,0 +1,8 @@
++package org.example;
++
++public class PopMusic implements Music{
++    @Override
++    public String getSong() {
++        return "Bara bara bara";
++    }
++}
+Index: Lesson6(HomeWork)/src/main/java/org/example/Music.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/java/org/example/Music.java b/Lesson6(HomeWork)/src/main/java/org/example/Music.java
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/java/org/example/Music.java	
+@@ -0,0 +1,5 @@
++package org.example;
++
++public interface Music {
++    String getSong();
++}
+Index: Lesson6(HomeWork)/src/main/java/org/example/TetSpring.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/java/org/example/TetSpring.java b/Lesson6(HomeWork)/src/main/java/org/example/TetSpring.java
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/java/org/example/TetSpring.java	
+@@ -0,0 +1,18 @@
++package org.example;
++
++import org.springframework.context.support.ClassPathXmlApplicationContext;
++
++public class TetSpring {
++    public static void main(String[] args) {
++        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
++                "applicationContext.xml");
++//this is lesson 7
++//        Music music= context.getBean("musicBean",Music.class);
++//        MusicPlayer musicPlayer = new MusicPlayer(music);
++
++        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
++        musicPlayer.playMusic();
++
++        context.close();
++    }
++}
+Index: Lesson6(HomeWork)/src/main/java/org/example/RockMusic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/java/org/example/RockMusic.java b/Lesson6(HomeWork)/src/main/java/org/example/RockMusic.java
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/java/org/example/RockMusic.java	
+@@ -0,0 +1,8 @@
++package org.example;
++
++public class RockMusic implements Music{
++    @Override
++    public String getSong() {
++        return "Hit the Bodies";
++    }
++}
+Index: Lesson6(HomeWork)/src/main/java/org/example/ClassicalMusic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/java/org/example/ClassicalMusic.java b/Lesson6(HomeWork)/src/main/java/org/example/ClassicalMusic.java
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/java/org/example/ClassicalMusic.java	
+@@ -0,0 +1,8 @@
++package org.example;
++
++public class ClassicalMusic implements Music{
++    @Override
++    public String getSong() {
++        return "Hungarian Rhapsody";
++    }
++}
+Index: Lesson6(HomeWork)/src/main/java/org/example/MusicPlayer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/java/org/example/MusicPlayer.java b/Lesson6(HomeWork)/src/main/java/org/example/MusicPlayer.java
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/java/org/example/MusicPlayer.java	
+@@ -0,0 +1,59 @@
++package org.example;
++
++import java.util.ArrayList;
++import java.util.Collections;
++import java.util.List;
++
++public class MusicPlayer {
++    private List<Music> musicList = new ArrayList<>();
++    private String name;
++    private int volume;
++
++    public MusicPlayer() {
++    }
++
++    //IoC
++    public MusicPlayer(Music musicList) {
++        this.musicList = (List<Music>) musicList;
++    }
++
++
++
++    public void playMusic() {
++        for(Music music:musicList){
++            System.out.println(music.getSong());
++        }
++    }
++
++//    public Music getMusic() {
++//        return music;
++//    }
++//    public void setMusic(Music music) {
++//        this.music = music;
++//    }
++    public String getName() {
++        return name;
++    }
++
++
++    public void setName(String name) {
++        this.name = name;
++    }
++
++    public int getVolume() {
++        return volume;
++    }
++
++    public void setVolume(int volume) {
++        this.volume = volume;
++    }
++
++    public List<Music> getMusicList() {
++        return musicList;
++    }
++
++    public  void setMusicList(List<Music> musicList) {
++        this.musicList = musicList;
++//        musicList.add((Music) this.musicList);
++    }
++}
+Index: lesson 6(DoI)/src/main/webapp/index.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson 6(DoI)/src/main/webapp/index.jsp b/lesson 6(DoI)/src/main/webapp/index.jsp
+new file mode 100644
+--- /dev/null	
++++ b/lesson 6(DoI)/src/main/webapp/index.jsp	
+@@ -0,0 +1,5 @@
++<html>
++<body>
++<h2>Hello World!</h2>
++</body>
++</html>
+Index: Lesson6(HomeWork)/src/main/webapp/index.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/webapp/index.jsp b/Lesson6(HomeWork)/src/main/webapp/index.jsp
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/webapp/index.jsp	
+@@ -0,0 +1,5 @@
++<html>
++<body>
++<h2>Hello World!</h2>
++</body>
++</html>
+Index: lesson 6(DoI)/src/main/webapp/WEB-INF/web.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson 6(DoI)/src/main/webapp/WEB-INF/web.xml b/lesson 6(DoI)/src/main/webapp/WEB-INF/web.xml
+new file mode 100644
+--- /dev/null	
++++ b/lesson 6(DoI)/src/main/webapp/WEB-INF/web.xml	
+@@ -0,0 +1,7 @@
++<!DOCTYPE web-app PUBLIC
++ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
++ "http://java.sun.com/dtd/web-app_2_3.dtd" >
++
++<web-app>
++  <display-name>Archetype Created Web Application</display-name>
++</web-app>
+Index: Lesson6(HomeWork)/src/main/webapp/WEB-INF/web.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/webapp/WEB-INF/web.xml b/Lesson6(HomeWork)/src/main/webapp/WEB-INF/web.xml
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/webapp/WEB-INF/web.xml	
+@@ -0,0 +1,7 @@
++<!DOCTYPE web-app PUBLIC
++ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
++ "http://java.sun.com/dtd/web-app_2_3.dtd" >
++
++<web-app>
++  <display-name>Archetype Created Web Application</display-name>
++</web-app>
+Index: Lesson6(HomeWork)/src/main/resources/applicationContext.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/resources/applicationContext.xml b/Lesson6(HomeWork)/src/main/resources/applicationContext.xml
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/resources/applicationContext.xml	
+@@ -0,0 +1,37 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<beans xmlns="http://www.springframework.org/schema/beans"
++       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++       xmlns:context="http://www.springframework.org/schema/context"
++       xsi:schemaLocation="http://www.springframework.org/schema/beans
++    http://www.springframework.org/schema/beans/spring-beans.xsd
++    http://www.springframework.org/schema/context
++    http://www.springframework.org/schema/context/spring-context.xsd">
++
++<!--    <context:property-placeholder location="classpath:musicPlayer.properties"/>-->
++
++    <bean id="musicBeanR"
++          class="org.example.RockMusic">
++    </bean>
++    <bean id="musicBeanC"
++          class="org.example.ClassicalMusic">
++    </bean>
++    <bean id="musicBeanP"
++          class="org.example.PopMusic">
++    </bean>
++
++    <bean id="musicPlayer" class="org.example.MusicPlayer">
++        <property name="musicList" >
++                <list>
++                    <ref bean="musicBeanR"/>
++                    <ref bean="musicBeanP"/>
++                    <ref bean="musicBeanC"/>
++                </list>
++        </property>
++        <!--        <property name="music" ref="musicBean"></property>-->
++        <!--        <property name="name" value="Xiaomi"/>-->
++        <!--        <property name="volume" value="50"/>-->
++        <!--        <property name="name" value="${musicPlayer.name}"/>-->
++        <!--        <property name="volume" value="${musicPlayer.volume}"/>-->
++    </bean>
++
++</beans>
+Index: lesson 6(DoI)/src/main/resources/applicationContext.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson 6(DoI)/src/main/resources/applicationContext.xml b/lesson 6(DoI)/src/main/resources/applicationContext.xml
+new file mode 100644
+--- /dev/null	
++++ b/lesson 6(DoI)/src/main/resources/applicationContext.xml	
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<beans xmlns="http://www.springframework.org/schema/beans"
++       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++       xmlns:context="http://www.springframework.org/schema/context"
++       xsi:schemaLocation="http://www.springframework.org/schema/beans
++    http://www.springframework.org/schema/beans/spring-beans.xsd
++    http://www.springframework.org/schema/context
++    http://www.springframework.org/schema/context/spring-context.xsd">
++
++    <bean id="musicBean"
++          class="org.example.ClassicalMusic">
++    </bean>
++</beans>
+\ No newline at end of file
+Index: Lesson6(HomeWork)/src/main/resources/musicPlayer.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/Lesson6(HomeWork)/src/main/resources/musicPlayer.properties b/Lesson6(HomeWork)/src/main/resources/musicPlayer.properties
+new file mode 100644
+--- /dev/null	
++++ b/Lesson6(HomeWork)/src/main/resources/musicPlayer.properties	
+@@ -0,0 +1,2 @@
++musicPlayer.name=Some name
++musicPlayer.volume=70
+\ No newline at end of file
+Index: lesson 6(DoI)/src/main/java/org/example/TetSpring.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson 6(DoI)/src/main/java/org/example/TetSpring.java b/lesson 6(DoI)/src/main/java/org/example/TetSpring.java
+new file mode 100644
+--- /dev/null	
++++ b/lesson 6(DoI)/src/main/java/org/example/TetSpring.java	
+@@ -0,0 +1,18 @@
++package org.example;
++
++import org.springframework.context.support.ClassPathXmlApplicationContext;
++
++public class TetSpring {
++    public static void main(String[] args) {
++        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
++                "applicationContext.xml");
++//this is lesson 7
++//        Music music= context.getBean("musicBean",Music.class);
++//        MusicPlayer musicPlayer = new MusicPlayer(music);
++
++        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
++        musicPlayer.playMusic();
++
++        context.close();
++    }
++}
+Index: lesson 6(DoI)/src/main/java/org/example/Music.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson 6(DoI)/src/main/java/org/example/Music.java b/lesson 6(DoI)/src/main/java/org/example/Music.java
+new file mode 100644
+--- /dev/null	
++++ b/lesson 6(DoI)/src/main/java/org/example/Music.java	
+@@ -0,0 +1,5 @@
++package org.example;
++
++public interface Music {
++    String getSong();
++}
+Index: lesson 6(DoI)/src/main/java/org/example/ClassicalMusic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson 6(DoI)/src/main/java/org/example/ClassicalMusic.java b/lesson 6(DoI)/src/main/java/org/example/ClassicalMusic.java
+new file mode 100644
+--- /dev/null	
++++ b/lesson 6(DoI)/src/main/java/org/example/ClassicalMusic.java	
+@@ -0,0 +1,8 @@
++package org.example;
++
++public class ClassicalMusic implements Music{
++    @Override
++    public String getSong() {
++        return "Hungarian Rhapsody";
++    }
++}
+Index: lesson 6(DoI)/src/main/java/org/example/RockMusic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson 6(DoI)/src/main/java/org/example/RockMusic.java b/lesson 6(DoI)/src/main/java/org/example/RockMusic.java
+new file mode 100644
+--- /dev/null	
++++ b/lesson 6(DoI)/src/main/java/org/example/RockMusic.java	
+@@ -0,0 +1,8 @@
++package org.example;
++
++public class RockMusic implements Music{
++    @Override
++    public String getSong() {
++        return "Hit the Bodies";
++    }
++}
+Index: lesson 6(DoI)/src/main/java/org/example/MusicPlayer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson 6(DoI)/src/main/java/org/example/MusicPlayer.java b/lesson 6(DoI)/src/main/java/org/example/MusicPlayer.java
+new file mode 100644
+--- /dev/null	
++++ b/lesson 6(DoI)/src/main/java/org/example/MusicPlayer.java	
+@@ -0,0 +1,13 @@
++package org.example;
++
++public class MusicPlayer {
++    private Music music;
++    //IoC
++    public MusicPlayer(Music music) {
++        this.music = music;
++    }
++
++    public void playMusic(){
++        System.out.println("Playing:"+music.getSong());
++    }
++}

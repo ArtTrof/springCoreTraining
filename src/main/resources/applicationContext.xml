@@ -10,4 +10,12 @@
     <bean id="musicBean"
           class="org.example.ClassicalMusic">
     </bean>
+
+    <bean id="musicPlayer"
+          class="org.example.MusicPlayer"
+          scope="prototype">
+        <property name="music" ref="musicBean"/>
+
+    </bean>
+
 </beans>

@@ -7,10 +7,15 @@ public class TetSpring {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml");
 
-        Music music= context.getBean("musicBean",Music.class);
-        MusicPlayer musicPlayer = new MusicPlayer(music);
-        musicPlayer.playMusic();
+        MusicPlayer firstMusicPlayer= context.getBean("musicPlayer",MusicPlayer.class);
+        MusicPlayer secondMusicPlayer= context.getBean("musicPlayer",MusicPlayer.class);
 
+        firstMusicPlayer.setVolume(20);
+        boolean comparison = firstMusicPlayer == secondMusicPlayer;
+        System.out.println(comparison);
+
+        System.out.println(firstMusicPlayer.getVolume());
+        System.out.println(secondMusicPlayer.getVolume());
         context.close();
     }
 }

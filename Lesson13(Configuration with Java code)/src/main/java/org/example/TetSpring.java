@@ -8,8 +8,15 @@ public class TetSpring {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        System.out.println(musicPlayer.getVolume());
+        System.out.println(musicPlayer.getName());
 
-        System.out.println(musicPlayer.playMusic());
+        ClassicalMusic classicalMusic = context.getBean("classicalMusic",ClassicalMusic.class);
+        ClassicalMusic classicalMusic2 = context.getBean("classicalMusic",ClassicalMusic.class);
+        boolean comp = classicalMusic2==classicalMusic;
+        System.out.println(comp);
+
+
 
         context.close();
     }

@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4b773b0-fb5a-43ce-9d7b-7967d693cb1f" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/musicPlayer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/java/org/example/ClassicalMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/java/org/example/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/java/org/example/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/java/org/example/MusicPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/java/org/example/RockMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/java/org/example/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/java/org/example/TetSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/resources/musicPlayer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson13(Configuration with Java code)/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/JazzMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClassicalMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Computer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MusicGenre.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MusicPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RockMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TetSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TetSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,7 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Programming/Projects/SpringFrameworkTraining",
+    "last_opened_file_path": "F:/Programming/Projects/SpringFrameworkTraining/Lesson13(Configuration with Java code)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,11 +78,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson13(Configuration with Java code)" />
+      <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson12(Annotations4)" />
       <recent name="F:\Programming\Projects\SpringFrameworkTraining" />
       <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson11(HomeWork)" />
       <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson11(Annotations3)" />
-      <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson10(Annotations2)" />
-      <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson9(Annotations1)" />
     </key>
   </component>
   <component name="RunManager">
@@ -106,7 +116,7 @@
       <workItem from="1674045341034" duration="3355000" />
       <workItem from="1674415578197" duration="1019000" />
       <workItem from="1674418521424" duration="1584000" />
-      <workItem from="1674480176518" duration="1587000" />
+      <workItem from="1674480176518" duration="7164000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1674388636609</created>
@@ -122,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674419503723</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1674483828381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674483828381</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

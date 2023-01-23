@@ -5,55 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4b773b0-fb5a-43ce-9d7b-7967d693cb1f" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/Lesson10(Annotations2)/src/main/java/org/example/ClassicalMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson10(Annotations2)/src/main/java/org/example/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson10(Annotations2)/src/main/java/org/example/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson10(Annotations2)/src/main/java/org/example/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson10(Annotations2)/src/main/java/org/example/RockMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson10(Annotations2)/src/main/java/org/example/TetSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson10(Annotations2)/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson10(Annotations2)/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson10(Annotations2)/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(Annotations3)/src/main/java/org/example/ClassicalMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(Annotations3)/src/main/java/org/example/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(Annotations3)/src/main/java/org/example/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(Annotations3)/src/main/java/org/example/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(Annotations3)/src/main/java/org/example/RockMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(Annotations3)/src/main/java/org/example/TetSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(Annotations3)/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(Annotations3)/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(Annotations3)/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/java/org/example/ClassicalMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/java/org/example/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/java/org/example/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/java/org/example/MusicGenre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/java/org/example/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/java/org/example/RockMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/java/org/example/TetSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson11(HomeWork)/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson8(Bean methods)/src/main/java/org/example/ClassicalMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson8(Bean methods)/src/main/java/org/example/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson8(Bean methods)/src/main/java/org/example/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson8(Bean methods)/src/main/java/org/example/RockMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson8(Bean methods)/src/main/java/org/example/TetSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson8(Bean methods)/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson8(Bean methods)/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson8(Bean methods)/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson9(Annotations1)/src/main/java/org/example/ClassicalMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson9(Annotations1)/src/main/java/org/example/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson9(Annotations1)/src/main/java/org/example/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson9(Annotations1)/src/main/java/org/example/RockMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson9(Annotations1)/src/main/java/org/example/TetSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson9(Annotations1)/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson9(Annotations1)/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson9(Annotations1)/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MusicGenre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/musicPlayer.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClassicalMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MusicGenre.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MusicPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RockMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TetSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TetSpring.java" afterDir="false" />
@@ -97,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Programming/Projects/SpringFrameworkTraining/Lesson11(HomeWork)",
+    "last_opened_file_path": "F:/Programming/Projects/SpringFrameworkTraining",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,11 +68,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Programming\Projects\SpringFrameworkTraining" />
+      <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson11(HomeWork)" />
       <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson11(Annotations3)" />
       <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson10(Annotations2)" />
       <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson9(Annotations1)" />
-      <recent name="F:\Programming\Projects\SpringFrameworkTraining\Lesson8(Bean methods)" />
-      <recent name="F:\Programming\Projects\SpringFrameworkTraining" />
     </key>
   </component>
   <component name="RunManager">
@@ -148,7 +105,8 @@
       <updated>1674045339662</updated>
       <workItem from="1674045341034" duration="3355000" />
       <workItem from="1674415578197" duration="1019000" />
-      <workItem from="1674418521424" duration="961000" />
+      <workItem from="1674418521424" duration="1584000" />
+      <workItem from="1674480176518" duration="1587000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1674388636609</created>
@@ -157,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674388636609</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <created>1674419503722</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674419503723</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

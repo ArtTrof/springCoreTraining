@@ -7,13 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="musicBean"
-          class="org.example.ClassicalMusic"
-          init-method="doMyInit"
-          destroy-method="doMyDestroy"
-          factory-method="getClassicalMusic"
-          scope="singleton">
-    </bean>
+
 
     <!--    <bean id="musicPlayer"-->
     <!--          class="org.example.MusicPlayer"-->
